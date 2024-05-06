@@ -17,8 +17,9 @@ $(document).ready(function () {
       $('div#api_status').removeClass('available');
     }
   });
+
   $.ajax({
-    url: 'http://172.24.207.153:5001/api/v1/places_search/',
+    url: 'http://0.0.0.0:5001/api/v1/places_search/',
     type: 'POST',
     contentType: 'application/json',
     data: JSON.stringify({}),
